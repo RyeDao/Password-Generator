@@ -62,6 +62,15 @@ generate.addEventListener('click', () => {
 	const hasNumber = numbersEl.checked;
 	const hasSymbol = symbolsEl.checked;
 	
+  if(hasLower === false &&
+    hasUpper === false &&
+    hasNumber === false &&
+    hasSymbol === false 
+   ) {
+     alert("Must select aft least one character type");
+     return null
+   }
+
 	passwordEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
 });
 
