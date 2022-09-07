@@ -43,11 +43,8 @@ function generatePassword(lower, upper, number, symbol, length) {
 // Add event listener to generate button
 generate.addEventListener('click', () => {
 	const length = +lengthEl.value;
-  if(Number.isNaN(length)){
-    alert("Password Length must be provided as a number")
-    return null;
-  }
-
+ 
+  
   if(length < 8){
     alert("Password must be at least 8 characters long!")
     return null;
