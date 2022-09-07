@@ -11,12 +11,9 @@ const randomFunc = {
 	upper: getRandomUpper,
 	number: getRandomNumber,
 	symbol: getRandomSymbol
-}
+};
 
-// Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
 function generatePassword(lower, upper, number, symbol, length) {
 	let generatedPassword = '';
 	const typesCount = lower + upper + number + symbol;
